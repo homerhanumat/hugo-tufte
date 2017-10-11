@@ -2,7 +2,7 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 builddrafts = true 
-canonifyurls = true
+relativeurls = true
 baseurl = "https://github.com/shawnohare/hugo-tufte"
 theme = "hugo-tufte"
 title = "Hugo-tufte Theme Example Site"
@@ -17,6 +17,15 @@ title = "Hugo-tufte Theme Example Site"
   subtitle = "Subtitle goes here."
   copyrightHolder = "Copyright Holder"
   showPoweredBy = true
+  
+[params.banner]
+  url = "https://i.imgur.com/ON7ulX4.png"
+  credit = """\
+           You can write quite a long \
+           margin-note here, if you like. \
+           It will be *mardownified*:  \
+           **Give it a whirl!** \
+           """
 
 # -----------------------------------------------------------------------
 # Navigation menu 

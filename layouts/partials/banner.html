@@ -1,0 +1,14 @@
+{{if isset .Site.Params.banner "url"}}
+  <div
+    id = "banner"
+  >
+  {{if isset .Site.Params.banner "credit"}}
+  <label for="credit" class="margin-toggle">&#8853;</label>
+  <input type="checkbox" id="credit" class="margin-toggle"/>
+  <span class="marginnote">{{ .Site.Params.banner.credit | markdownify }}</span>
+  {{ end }}
+  <img 
+    src = "{{ .Site.Params.banner.url | relURL }}"
+  >
+  </div>
+{{end}}
