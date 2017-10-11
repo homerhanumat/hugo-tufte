@@ -19,7 +19,7 @@ title = "Hugo-tufte Theme Example Site"
   showPoweredBy = true
   
 [params.banner]
-  url = "https://i.imgur.com/ON7ulX4.png"
+  url = "https://i.imgur.com/dOIoIyb.jpg"
   credit = """\
            You can write quite a long \
            margin-note here, if you like. \
