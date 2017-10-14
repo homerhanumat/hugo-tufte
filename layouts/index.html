@@ -6,7 +6,11 @@
 {{ range first 5 .Site.Pages }}
   {{if eq .Type "posts"}}
     {{ partial "content.header.html" . }}
+    {{ if .Params.summary }}
+    <p>{{ .Params.summary | markdownify }}</p>
+    {{ else }}
     <p>{{ .Summary }}</p>
+    {{ end }}
     {{ if .Truncated }}
     <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
     {{ end  }}
