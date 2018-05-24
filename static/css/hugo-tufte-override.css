@@ -2,3 +2,8 @@ div#banner {
   width: 55%;
   height: 100%;
 }
+
+.lead-quote {
+  font-size: 0.7em;
+  line-height: 100%;
+}
