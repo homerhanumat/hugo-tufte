@@ -4,4 +4,4 @@
 <meta name="description" content="{{ if isset .Params "description" }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
 <meta name="keywords" content="{{ range .Keywords }}{{ . }},{{ end }}">
 <meta name="author" content="{{ .Site.Title }}">
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
